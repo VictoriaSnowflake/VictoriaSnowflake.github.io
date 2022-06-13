@@ -1,40 +1,167 @@
-<html><head><script>(function(){window.__blocked={methods:["open","print","alert","prompt","confirm"],old:{}};for(var m in __blocked.methods){try {__blocked.old[m]=window[m];window[m]=function(){};}catch(e){}}})()</script>
+<!doctype html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <title>Bootstrap 3 SizeTest</title>
+      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+      <script src=" "></script>
+  </head>
+  <body>
+  
+  <script src="https://unpkg.com/react/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react/umd/react.development.js"></script>
+    
+    
+    <script id="rendered-js">
+function Square(props) {
+  return /*#__PURE__*/(
+    React.createElement("button", { className: "square", onClick: props.onClick },
+    props.value));
 
 
-
-  <meta charset="utf-8">
-  <title>React</title>
-  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.css">
-  <link rel="stylesheet" href="style.css">
-  <script src="https://fb.me/react-with-addons-15.0.0.js"></script>
-  <script src="https://fb.me/react-dom-15.0.0.js"></script>
-<style id="jsbin-css">
-body {
-  margin: 20px;
 }
-</style>
-</head>
-<body>
-  <div id="container"><div data-reactroot=""><h1>Welcome to React</h1><div><!-- react-text: 4 -->Hello <!-- /react-text --><!-- react-text: 5 -->World<!-- /react-text --></div></div></div>
-<script>try {var Hello = React.createClass({displayName: 'Hello',
-  render: function() {
-    return (
-      React.createElement("div", null, 
-        React.createElement("h1", null, "Welcome to React"), 
-        React.createElement("div", null, "Hello ", this.props.name)
-      )
-    );
+
+class Board extends React.Component {
+  renderSquare(i) {
+    return /*#__PURE__*/(
+      React.createElement(Square, {
+        value: this.props.squares[i],
+        onClick: () => this.props.onClick(i) }));
+
+
   }
-});
 
-ReactDOM.render(
-  React.createElement(Hello, {name: "World"}),
-  document.getElementById('container')
-);
-} catch (error) { throw error; }
+  render() {
+    return /*#__PURE__*/(
+      React.createElement("div", null, /*#__PURE__*/
+      React.createElement("div", { className: "board-row" },
+      this.renderSquare(0),
+      this.renderSquare(1),
+      this.renderSquare(2)), /*#__PURE__*/
 
-//# sourceURL=null.js
-</script>
+      React.createElement("div", { className: "board-row" },
+      this.renderSquare(3),
+      this.renderSquare(4),
+      this.renderSquare(5)), /*#__PURE__*/
+
+      React.createElement("div", { className: "board-row" },
+      this.renderSquare(6),
+      this.renderSquare(7),
+      this.renderSquare(8))));
 
 
-<!--jsbin live harness--><script>(function(){for(var m in __blocked.methods){try{window[m]=__blocked.old[m];delete __blocked;}catch(e){}};})()</script></body></html>
+
+  }}
+
+
+class Game extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      history: [
+      {
+        squares: Array(9).fill(null) }],
+
+
+      stepNumber: 0,
+      xIsNext: true };
+
+  }
+
+  handleClick(i) {
+    const history = this.state.history.slice(0, this.state.stepNumber + 1);
+    const current = history[history.length - 1];
+    const squares = current.squares.slice();
+    if (calculateWinner(squares) || squares[i]) {
+      return;
+    }
+    squares[i] = this.state.xIsNext ? "X" : "O";
+    this.setState({
+      history: history.concat([
+      {
+        squares: squares }]),
+
+
+      stepNumber: history.length,
+      xIsNext: !this.state.xIsNext });
+
+  }
+
+  jumpTo(step) {
+    this.setState({
+      stepNumber: step,
+      xIsNext: step % 2 === 0 });
+
+  }
+
+  render() {
+    const history = this.state.history;
+    const current = history[this.state.stepNumber];
+    const winner = calculateWinner(current.squares);
+
+    const moves = history.map((step, move) => {
+      const desc = move ?
+      'Go to move #' + move :
+      'Go to game start';
+      return /*#__PURE__*/(
+        React.createElement("li", { key: move }, /*#__PURE__*/
+        React.createElement("button", { onClick: () => this.jumpTo(move) }, desc)));
+
+
+    });
+
+    let status;
+    if (winner) {
+      status = "Winner: " + winner;
+    } else {
+      status = "Next player: " + (this.state.xIsNext ? "X" : "O");
+    }
+
+    return /*#__PURE__*/(
+      React.createElement("div", { className: "game" }, /*#__PURE__*/
+      React.createElement("div", { className: "game-board" }, /*#__PURE__*/
+      React.createElement(Board, {
+        squares: current.squares,
+        onClick: i => this.handleClick(i) })), /*#__PURE__*/
+
+
+      React.createElement("div", { className: "game-info" }, /*#__PURE__*/
+      React.createElement("div", null, status), /*#__PURE__*/
+      React.createElement("ol", null, moves))));
+
+
+
+  }}
+
+
+// ========================================
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render( /*#__PURE__*/React.createElement(Game, null));
+
+function calculateWinner(squares) {
+  const lines = [
+  [0, 1, 2],
+  [3, 4, 5],
+  [6, 7, 8],
+  [0, 3, 6],
+  [1, 4, 7],
+  [2, 5, 8],
+  [0, 4, 8],
+  [2, 4, 6]];
+
+  for (let i = 0; i < lines.length; i++) {if (window.CP.shouldStopExecution(0)) break;
+    const [a, b, c] = lines[i];
+    if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {
+      return squares[a];
+    }
+  }window.CP.exitedLoop(0);
+  return null;
+}
+//# sourceURL=pen.js
+    </script>
+  </body>
+</html>
