@@ -29,7 +29,7 @@
         this.state = {
           data: {
             level: 0,
-            sublevel:0,
+            sublevel: 0,
             type: 0
           },
           result: null,
@@ -47,8 +47,6 @@
 
       calculateResult() {
         var result = null;
-        console.warn(levels);
-        console.warn(this.state.data.level);
 
         var totalPoints =  0;
         for ( var i=1; i < levels.length + 2 - parseInt(this.state.data.level) - 40 + parseInt(this.state.data.type); i++) {
@@ -88,11 +86,11 @@
             <div div className="chiid-type-input-wrap">
               <div className="chiid-type-input">
               <label for="level"><span>Уровень</span></label>
-              <input type="text" name="level" onChange={this.handleChange.bind(this, "level")} value={this.state.data.level}/>
+              <input type="number" name="level" onChange={this.handleChange.bind(this, "level")} value={this.state.data.level}/>
               </div>
               <div className="chiid-type-input">
               <label for="sublevel"><span>Под уровень</span></label>
-              <input type="text" name="sublevel" onChange={this.handleChange.bind(this, "sublevel")} value={this.state.data.sublevel}/>
+              <input type="number" name="sublevel" onChange={this.handleChange.bind(this, "sublevel")} value={this.state.data.sublevel}/>
               </div>
 </div>
               <label for="type"><span>Тип воспитанника</span></label>
