@@ -97,11 +97,15 @@ body {
   display: inline-table;
   width: 50%;
   font-size: 18px;
-
 }
+.chiid-type-input input {
+  width: 120px;
+}
+
 .chiid-type-input input[type=text] {
   width: 90%;
 }
+
 
 .chiid-title{
   text-align: center;
@@ -114,13 +118,34 @@ body {
 .chiid-result {
   text-align: center;
   margin: 24px auto;
-    color: #b9004b;
-    line-height: 32px;
+  color: #b9004b;
+  line-height: 32px;
 
 }
 
 .chiid-type-select {
   width: 100%;
+}
 
+.chiid-type-input-wrap label b {
+  text-align: center;
+  margin: 4px auto;
+  font-size: 10px;
+  color: #b9004b;
+  line-height: 12px;
+}
 
+.form-style-3 textarea {
+  width: 90%;
+}
+.help-text {
+
+  margin: 12px 6px;
+  font-size: 14px;
+  color: #675f5f;
+  line-height: 18px;
+}
+
+.help-text b {
+  color: #b9004b;
 }

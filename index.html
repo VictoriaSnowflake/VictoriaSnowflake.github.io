@@ -23,7 +23,9 @@
     const root = ReactDOM.createRoot(container);
     const levels = [1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 5, 5, 5, 5, 5, 6, 6, 6, 6, 6, 7, 7, 7, 7, 7];
 
-    class Timer extends React.Component {
+
+
+    class Child extends React.Component {
       constructor(props) {
         super(props);
         this.state = {
@@ -37,12 +39,6 @@
           resultBallsOurs: null
         };
         this.handleChange = this.handleChange.bind(this);
-      }
-
-      tick() {
-        this.setState(state => ({
-          seconds: state.seconds + 1
-        }));
       }
 
       calculateResult() {
@@ -63,14 +59,6 @@
           resultBalls: resultBalls,
           resultBallsOurs: resultBallsOurs
         });
-      }
-
-      componentDidMount() {
-        // this.interval = setInterval(() => this.tick(), 1000);
-      }
-
-      componentWillUnmount() {
-        // clearInterval(this.interval);
       }
 
       handleChange (propertyName, event) {
@@ -123,7 +111,142 @@
       }
 
 
-      root.render(React.createElement(Timer, null));
+
+
+
+      class Friends extends React.Component {
+        constructor(props) {
+          super(props);
+          this.state = {
+            data: {
+              fix: 0,
+              persent: 0,
+              attSum: ''
+            },
+            result: 0,
+            totalAtt: 0,
+            fixAttAddition: null,
+            persentAttAddition: null
+          };
+          this.handleChange = this.handleChange.bind(this);
+        }
+
+        calculateResult() {
+          var result = 0;
+          var fixAttAddition = 0;
+          var persentAttAddition = 0;
+
+
+
+          var totalAttString = this.state.data.attSum.replace(/[^0-9+,\s]/g,"");
+          var arr = totalAttString.split('+');
+          var x, i = 0;
+          // var totalAtt = arr.map(i=>x+=i, x=0).reverse()[0];
+          var totalAtt = 0;
+           for (i = 0; i < arr.length; i++){
+              totalAtt = parseInt(totalAtt) + parseInt(arr[i]);
+           }
+
+          if(totalAtt > 0) {
+            fixAttAddition = this.state.data.fix / 2;
+            persentAttAddition =  (this.state.data.persent * 100) / (totalAtt * 0.003);
+            console.warn('fixAttAddition  ', fixAttAddition, 'persentAttAddition  ', persentAttAddition)
+            if (fixAttAddition > persentAttAddition) {
+              result = 1;
+            }
+            if (fixAttAddition < persentAttAddition) {
+              result = 2;
+            }
+          }
+
+          this.setState({
+            result: 0,
+            totalAtt: totalAtt,
+            fixAttAddition: fixAttAddition,
+            persentAttAddition: persentAttAddition
+          });
+        }
+
+        handleChange (propertyName, event) {
+          const data = this.state.data;
+          data[propertyName] = event.target.value;
+          this.calculateResult();
+          this.setState({ data: data });
+        }
+
+          render() {
+            return (
+              <div className="form-style-3">
+              <div className="chiid-title"> Что выгоднее качать на очки связи близкого друга?</div>
+              <div className="help-text"> Расчет относительно одной пары характеристик всех связанных помошников: выгоднее проценты или фиксированная добавка</div>
+
+              <label for="attSum"><span>Сумма двух атрибутов всех помошников (можно через знак + )</span></label>
+              <textarea type="text" name="attSum" onChange={this.handleChange.bind(this, "attSum")} value={this.state.data.attSum}> </textarea>
+              <div className="help-text"> всего <b>{this.state.totalAtt}</b> атрибутов </div>
+              <div className="chiid-type-input-wrap">
+                <div className="chiid-type-input">
+                <label for="fix"><span>Стоимость фиксированной надбавки</span><b>(+100 * 2)</b></label>
+                <input type="number" name="fix" onChange={this.handleChange.bind(this, "fix")} value={this.state.data.fix}/>
+                {this.state.data.fix != 0 &&
+                  <div className="help-text">
+                  <div> + 200 атрибутов</div>
+                  <div> стоимость 100 атрибутов за <b>{(this.state.fixAttAddition)}</b> очков связи</div>
+                  </div>
+                }
+                {this.state.result === 1  &&
+                  <div className="help-text-2"> 👍</div>
+                }
+                </div>
+                <div className="chiid-type-input">
+                <label for="persent"><span>Стоимость процентной надбавки</span><b>(+0.3% * 2)</b></label>
+                <input type="number" name="persent" onChange={this.handleChange.bind(this, "persent")} value={this.state.data.persent}/>
+                {this.state.data.persent != 0 &&
+                  <div className="help-text">
+                  <div> + {(this.state.totalAtt * 0.003)} атрибутов</div>
+                  <div> стоимость 100 атрибутов за <b>{(this.state.persentAttAddition).toFixed(2)}</b> очков связи</div>
+                  </div>
+                }
+                {this.state.result === 2 &&
+                  <div className="help-text-2"> 👍</div>
+                }
+                </div>
+  </div>
+
+              </div>
+            );
+          }
+        }
+
+
+      class Tabs extends React.Component {
+        constructor(props) {
+          super(props);
+          this.state = {
+            activeTab: 1
+          };
+          this.handleChange = this.handleChange.bind(this);
+        }
+
+        handleChange (propertyName, event) {
+          this.setState({ activeTab: dapropertyNameta });
+        }
+
+        render() {
+          return (
+            <div >
+
+              <Child />
+              <br /><br /><br /><br /><br /><br /><br /><br /><br />
+              <Friends />
+              <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+            </div>
+          )
+        }
+      }
+
+
+      // root.render(React.createElement(Timer, null));
+      root.render(React.createElement(Tabs, null));
 
     </script>
   </body>
