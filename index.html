@@ -3,6 +3,7 @@
   <head>
       <meta charset="UTF-8">
       <title>Калькуляторы Легенда феникса</title>
+      <meta name="viewport" content="width=device-width">
       <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
       <link rel="stylesheet" type="text/css" href="style.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
@@ -105,8 +106,16 @@
               <div className="chiid-result">
               Ребенку осталось расти {this.state.result} часов
               <div>
-                Для взросления нужно {this.state.resultBalls} шаров жизненной силы
-                и подождать {this.state.resultBallsOurs} часов
+                Для взросления нужно {this.state.resultBallsOurs === 0 &&
+                  <span> ровно </span>
+                }
+                {this.state.resultBalls} шаров жизненной силы
+
+                {this.state.resultBallsOurs > 0 &&
+                  <span> и подождать {this.state.resultBallsOurs} часов</span>
+                }
+                .
+
               </div>
               </div>
             </div>
