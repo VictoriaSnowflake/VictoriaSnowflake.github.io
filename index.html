@@ -83,6 +83,7 @@
         render() {
           return (
             <div className="form-style-3">
+            <div className="chiid-title"> Сколько осталось расти воспитаннику?</div>
             <div div className="chiid-type-input-wrap">
               <div className="chiid-type-input">
               <label for="level"><span>Уровень</span></label>
@@ -104,13 +105,13 @@
               <div className="chiid-result">
               Ребенку осталось расти {this.state.result} часов
               <div>
-                Для взросления нужно {this.state.resultBallsOurs === 0 &&
+                Для взросления нужно 🟢 {this.state.resultBallsOurs === 0 &&
                   <span> ровно </span>
                 }
                 {this.state.resultBalls} шаров жизненной силы
 
                 {this.state.resultBallsOurs > 0 &&
-                  <span> и подождать {this.state.resultBallsOurs} часов</span>
+                  <span> и подождать ⌚ {this.state.resultBallsOurs} часов</span>
                 }
                 .
 
