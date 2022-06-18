@@ -1,21 +1,21 @@
-body {
-  background-color: #f9eeea;
-  padding: 12px;
-}
+background-color: #f9eeea;
 
 
 .form-style-3{
-	font-family: "Roboto", "Lucida Grande", sans-serif;
-  max-width: 960px;
-  margin: 0 auto;
+	max-width: 450px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 .form-style-3 label{
 	display:block;
 	margin-bottom: 10px;
 }
 .form-style-3 label > span{
+	float: left;
+	width: 100px;
 	color: #F072A9;
+	font-weight: bold;
 	font-size: 13px;
+	text-shadow: 1px 1px 1px #fff;
 }
 .form-style-3 fieldset{
 	border-radius: 10px;
@@ -29,7 +29,7 @@ body {
 	-moz-box-shadow: inset 0px 0px 15px #FFE5E5;
 	-webkit-box-shadow: inset 0px 0px 15px #FFE5E5;
 }
-.form-style-3 fieldset legend {
+.form-style-3 fieldset legend{
 	color: #FFA0C9;
 	border-top: 1px solid #FFD2D2;
 	border-left: 1px solid #FFD2D2;
@@ -70,6 +70,7 @@ body {
 	-moz-box-shadow: inset 1px 1px 4px #FFD5E7;
 	-webkit-box-shadow: inset 1px 1px 4px #FFD5E7;
 	background: #FFEFF6;
+	width:50%;
 }
 .form-style-3  input[type=submit],
 .form-style-3  input[type=button]{
@@ -85,26 +86,4 @@ body {
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	font-weight: bold;
-}
-
-.chiid-type-input-wrap {
-  font-size: 0;
-}
-.chiid-type-input {
-  display: inline-table;
-  width: 50%;
-  font-size: 13px;
-}
-
-.chiid-result {
-  text-align: center;
-  margin: 24px auto;
-    color: #b9004b;
-
-}
-
-.chiid-type-select {
-  width: 100%;
-
-
 }
