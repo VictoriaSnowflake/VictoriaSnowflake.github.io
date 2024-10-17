@@ -42,9 +42,7 @@
 			<category id="2611100" parentId="2611000">LCC</category>
 			<category id="2611200" parentId="2611000">PLCC</category>
 			<category id="2612000" parentId="2610000">DIP</category>
-			<category id="2620000" parentId="2600000">для обработки видео изображений</category>
 			<category id="2630000" parentId="2600000">для телекоммуникации</category>
-			<category id="2640000" parentId="2600000">для телефонии</category>
 		</categories>
 		<offers>
 		    <offer id="7260644" group_id="396016">
@@ -652,51 +650,6 @@
 				<model>AT7206</model>
 				<vendorCode>AT7206</vendorCode>
 				<param name="Коротко о товаре">USB 2.0 (Am &lt;=&gt; Af), 1.5 m</param>
-			</offer>
-			<offer id="644541" group_id="987660">
-				<url>https://www.xcom-shop.ru/supermicro_snk-p0068psc_644541.html</url>
-				<price>4590</price>
-				<currencyId>RUB</currencyId>
-				<categoryId>2630000</categoryId>
-				<market_category>Кулер</market_category>
-				<picture>https://img.xcomdb.ru/pim/JPG/01/oohZpT8Xz8_750.jpg</picture>
-				<vendor>Supermicro</vendor>
-				<name>Кулер Supermicro SNK-P0068PSC Heatsink 2U+ X11 Front Purley Series Servers LGA 3647-0</name>
-				<description>Пассивный радиатор Supermicro SNK-P0068PSC совместим с сокетами Intel LGA3647, рассеиваемая мощность составляет 205 Вт.</description>
-				<barcode>0672042262540</barcode>
-				<model>SNK-P0068PSC</model>
-				<vendorCode>SNK-P0068PSC</vendorCode>
-				<param name="Коротко о товаре">Heatsink 2U+ X11 Front Purley Series Servers LGA 3647-0</param>
-			</offer>
-			<offer id="651956" group_id="81849">
-				<url>https://www.xcom-shop.ru/western_digital_wd20spzx_651956.html</url>
-				<price>8948</price>
-				<currencyId>RUB</currencyId>
-				<categoryId>2640000</categoryId>
-				<market_category>Жесткий диск 2TB SATA 6Gb/s</market_category>
-				<picture>https://img.xcomdb.ru/pim/JPG/68/Rz0sLbApmY_750.jpg</picture>
-				<vendor>Western Digital</vendor>
-				<name>Жесткий диск 2TB SATA 6Gb/s Western Digital WD20SPZX 2,5&apos;&apos; WD Blue 5400rpm 128MB</name>
-				<description>Жесткий диск  WD емкостью 2 Tб предназначен для массового применения.. Диск выполнен в формате 2.5" с интерфейсом подключения SATA 6Gb/s и скоростью вращения 5400rpm.</description>
-				<barcode>0718037847405</barcode>
-				<model>WD20SPZX</model>
-				<vendorCode>WD20SPZX</vendorCode>
-				<param name="Коротко о товаре">2,5&apos;&apos; WD Blue 5400rpm 128MB</param>
-			</offer>
-			<offer id="652560" group_id="964247">
-				<url>https://www.xcom-shop.ru/systeme_electric_atn000163_652560.html</url>
-				<price>270</price>
-				<currencyId>RUB</currencyId>
-				<categoryId>2640000</categoryId>
-				<market_category>Переключатель</market_category>
-				<picture>https://img.xcomdb.ru/pim/JPG/83/Or15iUOQXz_750.jpg</picture>
-				<vendor>Systeme Electric</vendor>
-				<name>Переключатель Systeme Electric ATN000163 AtlasDesign, 1-клавишный, с подсветкой, сх.6а, 10АХ, механизам, белый</name>
-				<description>В линейке AtlasDesign лицевые детали серии выполнены из европейского термопластика c добавлением ионов серебра. Эта технология обеспечивает надежную защиту от распространения бактерий и гарантирует безупречную эффективность на протяжении всего срока эксплуатации. Изделия AtlasDesign от Schneider Electric с успехом прошли тестовые испытания с более чем 50 видами микробов, по результатам которых получили сертификат европейской лаборатории Biomaster.</description>
-				<barcode>3606489583262</barcode>
-				<model>ATN000163</model>
-				<vendorCode>ATN000163</vendorCode>
-				<param name="Коротко о товаре">AtlasDesign, 1-клавишный, с подсветкой, сх.6а, 10АХ, механизам, белый</param>
 			</offer>
 			<offer id="549050" group_id="677603">
 				<url>https://www.xcom-shop.ru/spl_100008s_549050.html</url>
