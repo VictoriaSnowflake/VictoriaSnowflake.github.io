@@ -1,0 +1,556 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Калькуляторы Легенда феникса</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <!-- Don't use this in production: -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+
+<div class="story__main">
+
+    <header class="story__header">
+
+        <div class="story__user user">
+            <div class="story__user-info">
+                <a class="story__user-link user__nick" href="https://pikabu.ru/@reboost" data-profile="true" data-name="reboost" data-id="1087872">
+                    <div class="avatar avatar_small avatar_note image-lazy image-lazy-processed" data-name="reboost">
+									<span class="avatar__inner">
+								<img data-src="https://cs15.pikabu.ru/avatars/1087/m1087872-214766566.png" alt="reboost" class="image-lazy-processed image-loaded" src="https://cs15.pikabu.ru/avatars/1087/m1087872-214766566.png">
+								</span></div>
+
+                    reboost
+
+                </a>
+
+
+                <div><a href="/new/26-12-2024"><time datetime="2024-12-26T10:01:00+03:00" class="caption story__datetime hint">9 часов назад</time></a></div>
+            </div>
+        </div>
+
+        <h1 class="story__title"><span class="story__title-link">Как создать свой личный VPN сервер VLESS+Reality</span>&NoBreak;<span class="story-title-icons">&NoBreak;<span class="story-title-icons__icon story__hide-icon story__hide-icon_hide hint" aria-label="Автор скрыл пост из своего профиля"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon--ui__hide"><use xlink:href="#icon--ui__hide"></use></svg></span><span class="story-title-icons__icon story-title-icons__icon_hoverable story__copy-link hint" data-url="https%3A%2F%2Fpikabu.ru%2Fstory%2Fkak_sozdat_svoy_lichnyiy_vpn_server_vlessreality_12180362%3Futm_source%3Dlinkshare%26utm_medium%3Dsharing" aria-label="Скопировать ссылку на пост"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon--social__link"><use xlink:href="#icon--social__link"></use></svg></span></span>
+        </h1>
+        <div class="dots-menu story__dots"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon--ui__dots"><use xlink:href="#icon--ui__dots"></use></svg></div>
+
+    </header>		<div class="story__content-wrapper">
+
+    <div class="story__content story__typography" style="display: block">
+
+        <div class="story__content-inner">
+
+            <div class="story-block story-block_type_text">
+                <p>Почти полгода назад я написал статью о том, <a href="https://pikabu.ru/story/kak_sozdat_svoy_lichnyiy_vpn_server_vlessreality_12180362?u=https%3A%2F%2Fpikabu.ru%2Fstory%2Fkak_sozdat_svoy_lichnyiy_vpn_server_outline_11650551&amp;t=%D0%BA%D0%B0%D0%BA%20%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D1%82%D1%8C%20%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%20Outline&amp;h=1fcdb0eb76f16ce7ede629c01f5b97bb9ae2fb6d" target="_blank" rel="nofollow noopener">как создать сервер Outline</a>.</p>
+            </div>
+
+            <div class="story-block story-block_type_text">
+                <p>Однако, время идет и на смену приходят более защищенные протоколы - на этот раз ставим VLESS+Reality. На данный момент - это, пожалуй, самое лучшее и самое стабильное, что можно использовать для защищенных соединений.</p>
+            </div>
+
+            <div class="story-block story-block_type_text">
+                <p>Сразу ссылки на :</p>
+            </div>
+
+            <div class="story-block story-block_type_text">
+                <p><b>ПК клиент</b> - <a href="https://pikabu.ru/story/kak_sozdat_svoy_lichnyiy_vpn_server_vlessreality_12180362?u=https%3A%2F%2Fgithub.com%2F2dust%2Fv2rayN&amp;t=https%3A%2F%2Fgithub.com%2F2dust%2Fv2rayN&amp;h=969ee48cd7b78d211f6e2481b663cef1259300c3" target="_blank" rel="nofollow noopener">https://github.com/2dust/v2rayN</a></p>
+            </div>
+
+            <div class="story-block story-block_type_image">
+                <figure class="story-image">
+
+                    <svg class="story-image__stretch" aria-hidden="true" width="700" height="100%" viewBox="0 0 700 155"><rect width="700" height="155"></rect></svg>
+                    <div class="story-image__content "><a href="https://cs15.pikabu.ru/post_img/big/2024/12/25/4/1735103356122828703.png" target="_blank" class="image-link"><img data-src="https://cs15.pikabu.ru/post_img/2024/12/25/4/1735103356122828703.jpg" src="https://cs15.pikabu.ru/post_img/2024/12/25/4/1735103356122828703.jpg" data-large-image="https://cs15.pikabu.ru/post_img/big/2024/12/25/4/1735103356122828703.png" fetchpriority="high" class="story-image__image" data-viewable="true" alt="Как создать свой личный VPN сервер VLESS+Reality Инструкция, Настройка, Гайд, VPN, Реальность, Сервер, Ubuntu, Длиннопост"></a></div>
+
+                </figure>
+                <p class="story-block__title">Справа на странице есть ссылка на свежий релиз. Вам нужен архив <!--noindex--><a href="https://pikabu.ru/story/kak_sozdat_svoy_lichnyiy_vpn_server_vlessreality_12180362?u=http%3A%2F%2Fwindows-64-With-Core.zip&amp;t=windows-64-With-Core.zip&amp;h=cbf417dce427463c1f8895846acf90e330c992c5" target="_blank" rel="nofollow noopener">windows-64-With-Core.zip</a><!--/noindex--></p>
+            </div>
+
+            <div class="story-block story-block_type_text">
+                <p><b>Приложение для Android</b> - <a href="https://pikabu.ru/story/kak_sozdat_svoy_lichnyiy_vpn_server_vlessreality_12180362?u=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.v2raytun.android%26hl%3Dru&amp;t=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.v2raytun.android%26amp%3Bhl%3Dru&amp;h=ba7e2c6ec97eaaaf78940316d872e13c558e2467" target="_blank" rel="nofollow noopener">https://play.google.com/store/apps/details?id=com.v2raytun.android&amp;hl=ru</a></p>
+            </div>
+
+            <div class="story-block story-block_type_text">
+                <p><b>Приложение для Mac и iOS</b> - <a href="https://pikabu.ru/story/kak_sozdat_svoy_lichnyiy_vpn_server_vlessreality_12180362?u=https%3A%2F%2Fapps.apple.com%2Fru%2Fapp%2Fv2raytun%2Fid6476628951&amp;t=https%3A%2F%2Fapps.apple.com%2Fru%2Fapp%2Fv2raytun%2Fid6476628951&amp;h=219c71b4e370d59dfc48977004631d88455e7fc9" target="_blank" rel="nofollow noopener">https://apps.apple.com/ru/app/v2raytun/id6476628951</a></p>
+            </div>
+
+            <div class="story-block story-block_type_text">
+                <p>Всё, с предисловием закончили.</p>
+            </div>
+
+            <div class="story-block story-block_type_text">
+                <div class="pkb-highlight-block"><p><b>Глава 1 - Покупка сервера</b></p></div>
+            </div>
+
+            <div class="story-block story-block_type_text">
+                <p>В моем случае я продолжаю использовать <a href="https://pikabu.ru/story/kak_sozdat_svoy_lichnyiy_vpn_server_vlessreality_12180362?u=https%3A%2F%2Fhshp.host%2F%3Ffrom%3D10334&amp;t=HSHP&amp;h=d1a6edb60c0f17704aa61b234a3aacee0ca0adeb" target="_blank" rel="nofollow noopener">HSHP</a> (ссылка реферальная, потому что я еврей - мне можно), вы же можете найти любой другой удобный для вас вариант: Aeza, Timeweb, Fornex или даже упаси господь VDSina (я аж кофем поперхнулся вспомнив о нём). Покупайте любой, с момента подключения к серверу инструкция одинакова для всех.</p>
+            </div>
+
+            <div class="story-block story-block_type_text">
+                <blockquote><p>Единственная проблема HSHP - с некоторой вероятностью долгая активация сервера, в моем случае после данной покупки я прождал 6 часов, пока мой сервер активировали. Если вам сервер нужен вот прям срочно - то лучше покупайте у другого провайдера. В остальном к HSHP лично у меня претензий нет.</p></blockquote>
+            </div>
+
+            <div class="story-block story-block_type_text">
+                <p>Крутой и мощный сервер нам не нужен, хватит минимума с 1 ядром, 1 Гб RAM и 10 Гб места на диске, поэтому берите самый дешевый в Германии и ставьте Ubuntu 22.</p>
+            </div>
+
+            <div class="story-block story-block_type_image">
+                <figure class="story-image">
+
+                    <svg class="story-image__stretch" aria-hidden="true" width="700" height="100%" viewBox="0 0 700 644"><rect width="700" height="644"></rect></svg>
+                    <div class="story-image__content "><a href="https://cs15.pikabu.ru/post_img/big/2024/12/23/4/1734929035166943888.png" target="_blank" class="image-link"><img data-src="https://cs15.pikabu.ru/post_img/2024/12/23/4/1734929035166943888.jpg" src="https://cs15.pikabu.ru/post_img/2024/12/23/4/1734929035166943888.jpg" data-large-image="https://cs15.pikabu.ru/post_img/big/2024/12/23/4/1734929035166943888.png" class="story-image__image" data-viewable="true" alt="Как создать свой личный VPN сервер VLESS+Reality Инструкция, Настройка, Гайд, VPN, Реальность, Сервер, Ubuntu, Длиннопост"></a></div>
+
+                </figure>
+                <p class="story-block__title">Специально беру новый сервер, чтобы вместе с вами пройти этот квест с нуля.</p>
+            </div>
+
+            <div class="story-block story-block_type_text">
+                <p>Сервер куплен, активирован и запущен.</p>
+            </div>
+
+            <div class="story-block story-block_type_image">
+                <figure class="story-image image-lazy image-lazy-processed">
+
+                    <svg class="story-image__stretch" aria-hidden="true" width="700" height="100%" viewBox="0 0 700 43"><rect width="700" height="43"></rect></svg>
+                    <div class="story-image__content image-lazy image-lazy-processed"><a href="https://cs15.pikabu.ru/post_img/big/2024/12/25/4/1735106172153156468.png" target="_blank" class="image-link"><img data-src="https://cs15.pikabu.ru/post_img/2024/12/25/4/1735106172153156468.jpg" src="https://cs15.pikabu.ru/post_img/2024/12/25/4/1735106172153156468.jpg" data-large-image="https://cs15.pikabu.ru/post_img/big/2024/12/25/4/1735106172153156468.png" class="story-image__image image-lazy-processed image-loaded" data-viewable="true" alt="Как создать свой личный VPN сервер VLESS+Reality Инструкция, Настройка, Гайд, VPN, Реальность, Сервер, Ubuntu, Длиннопост"></a></div>
+
+                </figure>
+
+            </div>
+
+            <div class="story-block story-block_type_text">
+                <p>Ваш сервер получает уникальный ip-адрес, в моем случае - <a href="https://pikabu.ru/story/kak_sozdat_svoy_lichnyiy_vpn_server_vlessreality_12180362?u=https%3A%2F%2F37.46.16.116%2F&amp;t=37.46.16.116&amp;h=ce0c974efca44ffa215c0d2f2de5c64d18d049f1" target="_blank" rel="nofollow noopener">37.46.16.116</a></p>
+            </div>
+
+            <div class="story-block story-block_type_text">
+                <div class="pkb-highlight-block"><p><b>Глава 2 - Подключение к серверу</b></p></div>
+            </div>
+
+            <div class="story-block story-block_type_text">
+                <p>Для подключения к серверу вы можете использовать PuTTY, KiTTY, Moba, Termius, что хотите, я же воспользуюсь обычным встроенным в Windows вариантом: терминал <b>Windows Powershell</b></p>
+            </div>
+
+            <div class="story-block story-block_type_image">
+                <figure class="story-image image-lazy image-lazy-processed">
+
+                    <svg class="story-image__stretch" aria-hidden="true" width="700" height="100%" viewBox="0 0 700 106"><rect width="700" height="106"></rect></svg>
+                    <div class="story-image__content image-lazy image-lazy-processed"><a href="https://cs15.pikabu.ru/post_img/big/2024/12/25/4/173510605912460769.png" target="_blank" class="image-link"><img data-src="https://cs15.pikabu.ru/post_img/2024/12/25/4/173510605912460769.jpg" src="https://cs15.pikabu.ru/post_img/2024/12/25/4/173510605912460769.jpg" data-large-image="https://cs15.pikabu.ru/post_img/big/2024/12/25/4/173510605912460769.png" class="story-image__image image-lazy-processed image-loaded" data-viewable="true" alt="Как создать свой личный VPN сервер VLESS+Reality Инструкция, Настройка, Гайд, VPN, Реальность, Сервер, Ubuntu, Длиннопост"></a></div>
+
+                </figure>
+                <p class="story-block__title">Открываем (найти можно в пуске)</p>
+            </div>
+
+            <div class="story-block story-block_type_text">
+                <p>Подключаемся по ip-адресу (естественно по адресу вашего сервера) командой:</p>
+            </div>
+
+            <div class="story-block story-block_type_text">
+                <blockquote><p>ssh root@37.46.16.116</p></blockquote>
+            </div>
+
+            <div class="story-block story-block_type_text">
+                <p>При первом подключении нужно подтвердить, что вы доверяете данному серверу командой <b>yes</b>:</p>
+            </div>
+
+            <div class="story-block story-block_type_image">
+                <figure class="story-image image-lazy">
+
+                    <svg class="story-image__stretch" aria-hidden="true" width="700" height="100%" viewBox="0 0 700 97"><rect width="700" height="97"></rect></svg>
+                    <div class="story-image__content image-lazy"><a href="https://cs15.pikabu.ru/post_img/big/2024/12/25/5/1735106463162126251.png" target="_blank" class="image-link"><img data-src="https://cs15.pikabu.ru/post_img/2024/12/25/5/1735106463162126251.jpg" src="" data-large-image="https://cs15.pikabu.ru/post_img/big/2024/12/25/5/1735106463162126251.png" class="story-image__image" data-viewable="true" alt="Как создать свой личный VPN сервер VLESS+Reality Инструкция, Настройка, Гайд, VPN, Реальность, Сервер, Ubuntu, Длиннопост"></a></div>
+
+                </figure>
+
+            </div>
+
+            <div class="story-block story-block_type_text">
+                <p><i>Если на этом этапе у вас выскочила ошибка "WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!", то, значит, вы либо переустановили сервер, либо он просто отказывается с вами дружить, потому что заподозрил измену. Идите в папку <b>C:\Users\%USERNAME%\.ssh </b>и удаляйте присутствующий там файл. Потом повторяйте подключение.</i></p>
+            </div>
+
+            <div class="story-block story-block_type_text">
+                <p>Вводите пароль от root-пользователя:</p>
+            </div>
+
+            <div class="story-block story-block_type_image">
+                <figure class="story-image image-lazy">
+
+                    <svg class="story-image__stretch" aria-hidden="true" width="700" height="100%" viewBox="0 0 700 116"><rect width="700" height="116"></rect></svg>
+                    <div class="story-image__content image-lazy"><a href="https://cs15.pikabu.ru/post_img/big/2024/12/25/5/1735106549158289612.png" target="_blank" class="image-link"><img data-src="https://cs15.pikabu.ru/post_img/2024/12/25/5/1735106549158289612.jpg" src="" data-large-image="https://cs15.pikabu.ru/post_img/big/2024/12/25/5/1735106549158289612.png" class="story-image__image" data-viewable="true" alt="Как создать свой личный VPN сервер VLESS+Reality Инструкция, Настройка, Гайд, VPN, Реальность, Сервер, Ubuntu, Длиннопост"></a></div>
+
+                </figure>
+                <p class="story-block__title">Ввод пароля полностью скрыт, то есть вы не будете видеть ни то что вводите, ни даже звездочек, вместо символов. На скриншоте выше пароль уже введён, но ни вы ни я его не видят.</p>
+            </div>
+
+            <div class="story-block story-block_type_text">
+                <p>В случае с HSHP пароль указан в настройках вашего виртуального сервера:</p>
+            </div>
+
+            <div class="story-block story-block_type_image">
+                <figure class="story-image image-lazy">
+
+                    <svg class="story-image__stretch" aria-hidden="true" width="700" height="100%" viewBox="0 0 700 98"><rect width="700" height="98"></rect></svg>
+                    <div class="story-image__content image-lazy"><a href="https://cs15.pikabu.ru/post_img/big/2024/12/25/5/1735106614110482731.png" target="_blank" class="image-link"><img data-src="https://cs15.pikabu.ru/post_img/2024/12/25/5/1735106614110482731.jpg" src="" data-large-image="https://cs15.pikabu.ru/post_img/big/2024/12/25/5/1735106614110482731.png" class="story-image__image" data-viewable="true" alt="Как создать свой личный VPN сервер VLESS+Reality Инструкция, Настройка, Гайд, VPN, Реальность, Сервер, Ubuntu, Длиннопост"></a></div>
+
+                </figure>
+                <p class="story-block__title">У других провайдеров он тоже указан где-то в настройках сервера, либо приходит на почту при покупке сервера, либо устанавливается в панели управления сервером</p>
+            </div>
+
+            <div class="story-block story-block_type_text">
+                <p>Если вдруг что-то идет не так на этапе ввода пароля, то его можно поменять зайдя в <b>Панель управления:</b></p>
+            </div>
+
+            <div class="story-block story-block_type_image">
+                <figure class="story-image image-lazy">
+
+                    <svg class="story-image__stretch" aria-hidden="true" width="700" height="100%" viewBox="0 0 700 197"><rect width="700" height="197"></rect></svg>
+                    <div class="story-image__content image-lazy"><a href="https://cs15.pikabu.ru/post_img/big/2024/12/26/5/1735196268172088780.png" target="_blank" class="image-link"><img data-src="https://cs15.pikabu.ru/post_img/2024/12/26/5/1735196268172088780.jpg" src="" data-large-image="https://cs15.pikabu.ru/post_img/big/2024/12/26/5/1735196268172088780.png" class="story-image__image" data-viewable="true" alt="Как создать свой личный VPN сервер VLESS+Reality Инструкция, Настройка, Гайд, VPN, Реальность, Сервер, Ubuntu, Длиннопост"></a></div>
+
+                </figure>
+
+            </div>
+
+            <div class="story-block story-block_type_text">
+                <p>И поменять в разделе Настройка VNC</p>
+            </div>
+
+            <div class="story-block story-block_type_image">
+                <figure class="story-image image-lazy">
+
+                    <svg class="story-image__stretch" aria-hidden="true" width="700" height="100%" viewBox="0 0 700 216"><rect width="700" height="216"></rect></svg>
+                    <div class="story-image__content image-lazy"><a href="https://cs15.pikabu.ru/post_img/big/2024/12/26/5/173519630019462071.png" target="_blank" class="image-link"><img data-src="https://cs15.pikabu.ru/post_img/2024/12/26/5/173519630019462071.jpg" src="" data-large-image="https://cs15.pikabu.ru/post_img/big/2024/12/26/5/173519630019462071.png" class="story-image__image" data-viewable="true" alt="Как создать свой личный VPN сервер VLESS+Reality Инструкция, Настройка, Гайд, VPN, Реальность, Сервер, Ubuntu, Длиннопост"></a></div>
+
+                </figure>
+                <p class="story-block__title">Панель управления виртуальных машин примерно одинаковая у многих провайдеров</p>
+            </div>
+
+            <div class="story-block story-block_type_text">
+                <p>Успешный вход на сервер выглядит так:</p>
+            </div>
+
+            <div class="story-block story-block_type_image">
+                <figure class="story-image image-lazy">
+
+                    <svg class="story-image__stretch" aria-hidden="true" width="700" height="100%" viewBox="0 0 700 191"><rect width="700" height="191"></rect></svg>
+                    <div class="story-image__content image-lazy"><a href="https://cs15.pikabu.ru/post_img/big/2024/12/25/5/173510679811760928.png" target="_blank" class="image-link"><img data-src="https://cs15.pikabu.ru/post_img/2024/12/25/5/173510679811760928.jpg" src="" data-large-image="https://cs15.pikabu.ru/post_img/big/2024/12/25/5/173510679811760928.png" class="story-image__image" data-viewable="true" alt="Как создать свой личный VPN сервер VLESS+Reality Инструкция, Настройка, Гайд, VPN, Реальность, Сервер, Ubuntu, Длиннопост"></a></div>
+
+                </figure>
+
+            </div>
+
+            <div class="story-block story-block_type_text">
+                <p>Первым делом, не только в этом случае, а вообще всегда при работе с серверами - обновляем всё, что обновляется. Для этого вводим команду:</p>
+            </div>
+
+            <div class="story-block story-block_type_text">
+                <blockquote><p>apt update &amp;&amp; apt upgrade -y</p></blockquote>
+            </div>
+
+            <div class="story-block story-block_type_image">
+                <figure class="story-image image-lazy">
+
+                    <svg class="story-image__stretch" aria-hidden="true" width="700" height="100%" viewBox="0 0 700 223"><rect width="700" height="223"></rect></svg>
+                    <div class="story-image__content image-lazy"><a href="https://cs15.pikabu.ru/post_img/big/2024/12/25/5/1735107601141428974.png" target="_blank" class="image-link"><img data-src="https://cs15.pikabu.ru/post_img/2024/12/25/5/1735107601141428974.jpg" src="" data-large-image="https://cs15.pikabu.ru/post_img/big/2024/12/25/5/1735107601141428974.png" class="story-image__image" data-viewable="true" alt="Как создать свой личный VPN сервер VLESS+Reality Инструкция, Настройка, Гайд, VPN, Реальность, Сервер, Ubuntu, Длиннопост"></a></div>
+
+                </figure>
+                <p class="story-block__title">команда update обновляет базы пакетов, upgrade обновляет установленное до свежих версий, команда -y автоматически соглашается на всё за вас.</p>
+            </div>
+
+            <div class="story-block story-block_type_text">
+                <p>В процессе обновления может встать вопрос о перезапуске служб:</p>
+            </div>
+
+            <div class="story-block story-block_type_image">
+                <figure class="story-image image-lazy">
+
+                    <svg class="story-image__stretch" aria-hidden="true" width="700" height="100%" viewBox="0 0 700 107"><rect width="700" height="107"></rect></svg>
+                    <div class="story-image__content image-lazy"><a href="https://cs15.pikabu.ru/post_img/big/2024/12/25/5/1735107751130526471.png" target="_blank" class="image-link"><img data-src="https://cs15.pikabu.ru/post_img/2024/12/25/5/1735107751130526471.jpg" src="" data-large-image="https://cs15.pikabu.ru/post_img/big/2024/12/25/5/1735107751130526471.png" class="story-image__image" data-viewable="true" alt="Как создать свой личный VPN сервер VLESS+Reality Инструкция, Настройка, Гайд, VPN, Реальность, Сервер, Ubuntu, Длиннопост"></a></div>
+
+                </figure>
+
+            </div>
+
+            <div class="story-block story-block_type_text">
+                <p>Мы с вами понятия не имеем, что это за службы, ведь мы им не служим, поэтому соглашаемся на перезапуск всего вписав команду:</p>
+            </div>
+
+            <div class="story-block story-block_type_text">
+                <blockquote><p>all</p></blockquote>
+            </div>
+
+            <div class="story-block story-block_type_text">
+                <p>Видим, что команда не срабатывает, еще раз убеждаемся в своем величии относительно бездушной и глупой машины, так как можем мыслить шире и глобальнее, поэтому вводим другую команду:</p>
+            </div>
+
+            <div class="story-block story-block_type_text">
+                <blockquote><p>1-9<i> (или 1-8, или 1-15, зависит от того, сколько служб перечислено в списке)</i></p></blockquote>
+            </div>
+
+            <div class="story-block story-block_type_image">
+                <figure class="story-image image-lazy">
+
+                    <svg class="story-image__stretch" aria-hidden="true" width="700" height="100%" viewBox="0 0 700 319"><rect width="700" height="319"></rect></svg>
+                    <div class="story-image__content image-lazy"><a href="https://cs15.pikabu.ru/post_img/big/2024/12/25/5/173510755617749745.png" target="_blank" class="image-link"><img data-src="https://cs15.pikabu.ru/post_img/2024/12/25/5/173510755617749745.jpg" src="" data-large-image="https://cs15.pikabu.ru/post_img/big/2024/12/25/5/173510755617749745.png" class="story-image__image" data-viewable="true" alt="Как создать свой личный VPN сервер VLESS+Reality Инструкция, Настройка, Гайд, VPN, Реальность, Сервер, Ubuntu, Длиннопост"></a></div>
+
+                </figure>
+                <p class="story-block__title">Машина побеждена и обновлена, мы всё еще подключены к серверу, а значит пока что ничего не сломали и можем продолжать</p>
+            </div>
+
+            <div class="story-block story-block_type_text">
+                <p>Если у вас будут появляться другие какие-либо предупреждения, то просто соглашайтесь на всё. Это же сервер, а не звонящий через вацап финансовый защитник Сбербанка фиксирующий подозрительный перевод от вашего имени на имя Крымнашевой Шконки Олеговны, серверу можно верить.</p>
+            </div>
+
+            <div class="story-block story-block_type_text">
+                <p>После обновления вводим команду установки панели 3X-UI, в которой мы и будем настраивать и управлять нашим VPN'ом. Вводим команду:</p>
+            </div>
+
+            <div class="story-block story-block_type_text">
+                <blockquote><p>bash &lt;(curl -Ls <!--noindex--><a href="https://pikabu.ru/story/kak_sozdat_svoy_lichnyiy_vpn_server_vlessreality_12180362?u=https%3A%2F%2Fraw.githubusercontent.com%2Fmhsanaei%2F3x-ui%2Fmaster%2Finstall.sh&amp;t=https%3A%2F%2Fraw.githubusercontent.com%2Fmhsanaei%2F3x-ui%2Fmaster%2Finst...&amp;h=0f25f1f78743700402c8e61bc68c016eb6555e1e" target="_blank" rel="nofollow noopener">https://raw.githubusercontent.com/mhsanaei/3x-ui/master/inst...</a><!--/noindex-->)</p></blockquote>
+            </div>
+
+            <div class="story-block story-block_type_text">
+                <p><i>Да, кстати, те кто внезапно впервые пользуются терминалом, Ctrl-V тут не работает, как вы могли заметить, поэтому вставить скопированный текст можно нажатием правой кнопки мыши.</i></p>
+            </div>
+
+            <div class="story-block story-block_type_text">
+                <p>В будущем разработчики могут что-то поменять, поэтому актуальную команду можно посмотреть на их странице: <a href="https://pikabu.ru/story/kak_sozdat_svoy_lichnyiy_vpn_server_vlessreality_12180362?u=https%3A%2F%2Fgithub.com%2FMHSanaei%2F3x-ui&amp;t=https%3A%2F%2Fgithub.com%2FMHSanaei%2F3x-ui&amp;h=df8aaf78747518727a4378a654e17ea4ea9ae020" target="_blank" rel="nofollow noopener">https://github.com/MHSanaei/3x-ui</a></p>
+            </div>
+
+            <div class="story-block story-block_type_image">
+                <figure class="story-image image-lazy">
+
+                    <svg class="story-image__stretch" aria-hidden="true" width="700" height="100%" viewBox="0 0 700 114"><rect width="700" height="114"></rect></svg>
+                    <div class="story-image__content image-lazy"><a href="https://cs15.pikabu.ru/post_img/big/2024/12/25/5/1735108522155097828.png" target="_blank" class="image-link"><img data-src="https://cs15.pikabu.ru/post_img/2024/12/25/5/1735108522155097828.jpg" src="" data-large-image="https://cs15.pikabu.ru/post_img/big/2024/12/25/5/1735108522155097828.png" class="story-image__image" data-viewable="true" alt="Как создать свой личный VPN сервер VLESS+Reality Инструкция, Настройка, Гайд, VPN, Реальность, Сервер, Ubuntu, Длиннопост"></a></div>
+
+                </figure>
+
+            </div>
+
+            <div class="story-block story-block_type_text">
+                <p>В процессе установки вас спросят о том, хотите ли вы определить какой-то конкретный порт для работы, и если вам совершенно пофиг как и мне или вы не понимаете в какой момент мы начали говорить о кораблях, то пишите команду:</p>
+            </div>
+
+            <div class="story-block story-block_type_text">
+                <blockquote><p>n</p></blockquote>
+            </div>
+
+            <div class="story-block story-block_type_image">
+                <figure class="story-image image-lazy">
+
+                    <svg class="story-image__stretch" aria-hidden="true" width="700" height="100%" viewBox="0 0 700 118"><rect width="700" height="118"></rect></svg>
+                    <div class="story-image__content image-lazy"><a href="https://cs15.pikabu.ru/post_img/big/2024/12/25/5/1735108673155427866.png" target="_blank" class="image-link"><img data-src="https://cs15.pikabu.ru/post_img/2024/12/25/5/1735108673155427866.jpg" src="" data-large-image="https://cs15.pikabu.ru/post_img/big/2024/12/25/5/1735108673155427866.png" class="story-image__image" data-viewable="true" alt="Как создать свой личный VPN сервер VLESS+Reality Инструкция, Настройка, Гайд, VPN, Реальность, Сервер, Ubuntu, Длиннопост"></a></div>
+
+                </figure>
+
+            </div>
+
+            <div class="story-block story-block_type_text">
+                <p>Финал установки выглядит так:</p>
+            </div>
+
+            <div class="story-block story-block_type_image">
+                <figure class="story-image image-lazy">
+
+                    <svg class="story-image__stretch" aria-hidden="true" width="700" height="100%" viewBox="0 0 700 397"><rect width="700" height="397"></rect></svg>
+                    <div class="story-image__content image-lazy"><a href="https://cs15.pikabu.ru/post_img/big/2024/12/25/5/1735108715150672661.png" target="_blank" class="image-link"><img data-src="https://cs15.pikabu.ru/post_img/2024/12/25/5/1735108715150672661.jpg" src="" data-large-image="https://cs15.pikabu.ru/post_img/big/2024/12/25/5/1735108715150672661.png" class="story-image__image" data-viewable="true" alt="Как создать свой личный VPN сервер VLESS+Reality Инструкция, Настройка, Гайд, VPN, Реальность, Сервер, Ubuntu, Длиннопост"></a></div>
+
+                </figure>
+
+            </div>
+
+            <div class="story-block story-block_type_text">
+                <p>Сохраните себе куда-нибудь следующую информацию выделенную зеленым цветом:</p>
+            </div>
+
+            <div class="story-block story-block_type_text">
+                <ul><li><p><b>Username </b>- это ваше имя пользователя</p></li><li><p><b>Password </b>- пароль от вашего имени пользователя</p></li><li><p><b>Access URL</b> - это непосредственно ссылка, по которой вам нужно перейти для входа в панель управления, зайти просто по ip:порт не получится, нужно будет вводить ссылку целиком.</p><p>Всё это вам пригодится сейчас и в будущем при работе в панели управления VPN'ом.</p></li></ul>
+            </div>
+
+            <div class="story-block story-block_type_text">
+                <p>Теперь мы можем закрыть и забыть про терминал, возвращаться к серверу отныне вам не придется, если, конечно, вы не потеряете учетные данные и ссылку, или не захотите внести какие-то изменения в работу сервера.</p>
+            </div>
+
+            <div class="story-block story-block_type_text">
+                <p>Для запроса учетных данных можно всегда воспользоваться командой: <b>x-ui settings</b></p>
+            </div>
+
+            <div class="story-block story-block_type_text">
+                <div class="pkb-highlight-block"><p><b>Глава 3 - Создание VPN подключения</b></p></div>
+            </div>
+
+            <div class="story-block story-block_type_text">
+                <p>Заходим на страницу панели управления и вводим имя пользователя и пароль</p>
+            </div>
+
+            <div class="story-block story-block_type_image">
+                <figure class="story-image image-lazy">
+
+                    <svg class="story-image__stretch" aria-hidden="true" width="700" height="100%" viewBox="0 0 700 294"><rect width="700" height="294"></rect></svg>
+                    <div class="story-image__content image-lazy"><a href="https://cs15.pikabu.ru/post_img/big/2024/12/25/5/1735109738123713454.png" target="_blank" class="image-link"><img data-src="https://cs15.pikabu.ru/post_img/2024/12/25/5/1735109738123713454.jpg" src="" data-large-image="https://cs15.pikabu.ru/post_img/big/2024/12/25/5/1735109738123713454.png" class="story-image__image" data-viewable="true" alt="Как создать свой личный VPN сервер VLESS+Reality Инструкция, Настройка, Гайд, VPN, Реальность, Сервер, Ubuntu, Длиннопост"></a></div>
+
+                </figure>
+
+            </div>
+
+            <div class="story-block story-block_type_text">
+                <p>Далее заходим в "<b>Подключения</b>" - "<b>Добавить новое подключение</b>" и проверяем настройки по порядку:</p>
+            </div>
+
+            <div class="story-block story-block_type_text">
+                <ul><li><p><b>Включить </b>- <b>вкл</b></p></li><li><p><b>Примечание </b>- любое наименование</p></li><li><p><b>Протокол </b>- в нашем случае <b>vless</b></p></li><li><p><b>Порт IP - пусто</b></p></li><li><p><b>Порт - 443</b></p></li><li><p><b>Общий расход - 0</b></p></li><li><p><b>Дата окончания - пусто</b></p></li><li><p><b>Протокол передачи - TCP</b></p></li><li><p><b>Proxy Protocol, HTTP Маскировка, Sockopt, External Proxy</b> - <b>выкл</b></p></li><li><p><b>Безопасность </b>- <b>Reality</b></p></li><li><p><b>Show - выкл</b></p></li><li><p><b>Xver - 0</b></p></li><li><p><b>uTLS - любой на выбор</b></p></li><li><p><b>Dest (Target) - <!--noindex--><a href="https://pikabu.ru/story/kak_sozdat_svoy_lichnyiy_vpn_server_vlessreality_12180362?u=http%3A%2F%2Fya.ru%3A443&amp;t=ya.ru%3A443&amp;h=7a6c5dea33938a35b65fd6fdd903a400d15ccbb3" target="_blank" rel="nofollow noopener">ya.ru:443</a><!--/noindex--> (</b>или, например, <b><!--noindex--><a href="https://pikabu.ru/story/kak_sozdat_svoy_lichnyiy_vpn_server_vlessreality_12180362?u=http%3A%2F%2Fgoogle.com%3A443&amp;t=google.com%3A443&amp;h=830be3d2a317f69724cec2e2a2515c027db4a18c" target="_blank" rel="nofollow noopener">google.com:443</a><!--/noindex--></b>, а можно оставить и yahoo</p></li><li><p><b>SNI </b>- <b><!--noindex--><a href="https://pikabu.ru/story/kak_sozdat_svoy_lichnyiy_vpn_server_vlessreality_12180362?u=http%3A%2F%2Fya.ru&amp;t=ya.ru&amp;h=9eeac13b492092f42097c83916e4037c01a7766d" target="_blank" rel="nofollow noopener">ya.ru</a><!--/noindex-->,www.<!--noindex--><a href="https://pikabu.ru/story/kak_sozdat_svoy_lichnyiy_vpn_server_vlessreality_12180362?u=http%3A%2F%2Fya.ru&amp;t=ya.ru&amp;h=9eeac13b492092f42097c83916e4037c01a7766d" target="_blank" rel="nofollow noopener">ya.ru</a><!--/noindex--></b> (или, например, <b><!--noindex--><a href="https://pikabu.ru/story/kak_sozdat_svoy_lichnyiy_vpn_server_vlessreality_12180362?u=http%3A%2F%2Fgoogle.com&amp;t=google.com&amp;h=29e56248658a39020366b97a6488d9f40f970e97" target="_blank" rel="nofollow noopener">google.com</a><!--/noindex-->,www.<!--noindex--><a href="https://pikabu.ru/story/kak_sozdat_svoy_lichnyiy_vpn_server_vlessreality_12180362?u=http%3A%2F%2Fgoogle.com&amp;t=google.com&amp;h=29e56248658a39020366b97a6488d9f40f970e97" target="_blank" rel="nofollow noopener">google.com</a><!--/noindex--></b>), как и тут</p></li><li><p><b>Max Time Diff (ms) - 0</b></p></li><li><p><b>Short IDs</b> - <b>не трогаем</b></p></li><li><p><b>SpiderX - /</b></p></li><li><p>Нажимаем кнопку<b> Get New Cert </b>для получения<b> Приватного и Публичного ключей</b></p></li><li><p><b>Sniffing - вкл</b></p></li><li><p><b>HTTP, TLS, QUIC, FAKEDNS - вкл</b></p></li><li><p><b>Metadata Only и Route Only</b> - <b>выкл</b></p></li></ul>
+            </div>
+
+            <div class="story-block story-block_type_image">
+                <figure class="story-image image-lazy">
+
+                    <svg class="story-image__stretch" aria-hidden="true" width="700" height="100%" viewBox="0 0 700 1191"><rect width="700" height="1191"></rect></svg>
+                    <div class="story-image__content image-lazy"><a href="https://cs15.pikabu.ru/post_img/big/2024/12/25/5/173511200016307313.png" target="_blank" class="image-link"><img data-src="https://cs15.pikabu.ru/post_img/2024/12/25/5/173511200016307313.jpg" src="" data-large-image="https://cs15.pikabu.ru/post_img/big/2024/12/25/5/173511200016307313.png" class="story-image__image" data-viewable="true" alt="Как создать свой личный VPN сервер VLESS+Reality Инструкция, Настройка, Гайд, VPN, Реальность, Сервер, Ubuntu, Длиннопост"></a></div>
+
+                </figure>
+
+            </div>
+
+            <div class="story-block story-block_type_text">
+                <p>Вы могли заметить, что я пропустил блок "Клиент". Сделал я это намеренно, чтобы отдельно заострить внимание на процессе добавления пользователей.</p>
+            </div>
+
+            <div class="story-block story-block_type_text">
+                <p>Для добавления новых пользователей нужно нажать по многоточию <b>Меню </b>- <b>Добавить пользователя</b></p>
+            </div>
+
+            <div class="story-block story-block_type_image">
+                <figure class="story-image image-lazy">
+
+                    <svg class="story-image__stretch" aria-hidden="true" width="700" height="100%" viewBox="0 0 700 272"><rect width="700" height="272"></rect></svg>
+                    <div class="story-image__content image-lazy"><a href="https://cs15.pikabu.ru/post_img/big/2024/12/25/5/1735110805111641680.png" target="_blank" class="image-link"><img data-src="https://cs15.pikabu.ru/post_img/2024/12/25/5/1735110805111641680.jpg" src="" data-large-image="https://cs15.pikabu.ru/post_img/big/2024/12/25/5/1735110805111641680.png" class="story-image__image" data-viewable="true" alt="Как создать свой личный VPN сервер VLESS+Reality Инструкция, Настройка, Гайд, VPN, Реальность, Сервер, Ubuntu, Длиннопост"></a></div>
+
+                </figure>
+
+            </div>
+
+            <div class="story-block story-block_type_text">
+                <p>Далее указываем:</p>
+            </div>
+
+            <div class="story-block story-block_type_text">
+                <ul><li><p><b>Email </b>- задайте <b>уникальное имя</b>, чтобы не запутаться потом какой для чего создан</p></li><li><p><b>ID </b>- <b>не трогаем</b></p></li><li><p><b>Flow </b>- <b>xtls-rprx-vision</b></p></li><li><p><b>Общий расход</b>, <b>Начало использования и Дата окончания</b> - не трогаем, если вам не нужно как-то ограничить пользователя</p></li></ul>
+            </div>
+
+            <div class="story-block story-block_type_image">
+                <figure class="story-image image-lazy">
+
+                    <svg class="story-image__stretch" aria-hidden="true" width="700" height="100%" viewBox="0 0 700 477"><rect width="700" height="477"></rect></svg>
+                    <div class="story-image__content image-lazy"><a href="https://cs15.pikabu.ru/post_img/big/2024/12/25/5/1735112563152434111.png" target="_blank" class="image-link"><img data-src="https://cs15.pikabu.ru/post_img/2024/12/25/5/1735112563152434111.jpg" src="" data-large-image="https://cs15.pikabu.ru/post_img/big/2024/12/25/5/1735112563152434111.png" class="story-image__image" data-viewable="true" alt="Как создать свой личный VPN сервер VLESS+Reality Инструкция, Настройка, Гайд, VPN, Реальность, Сервер, Ubuntu, Длиннопост"></a></div>
+
+                </figure>
+                <p class="story-block__title">Жмем "Добавить пользователя"</p>
+            </div>
+
+            <div class="story-block story-block_type_text">
+                <p>Для раскрытия/скрытия списка пользователей достаточно нажать плюс/минус в колонке ID</p>
+            </div>
+
+            <div class="story-block story-block_type_text">
+                <p>Далее просто либо жмете значок <b>QR-код</b>а и сканируете его приложением, если вам надо настроить VPN на мобильном устройстве, либо жмете значок <b>Информация</b>, там указан URL, который необходимо вставить в приложение на ПК. О нем далее отдельно.</p>
+            </div>
+
+            <div class="story-block story-block_type_image">
+                <figure class="story-image image-lazy">
+
+                    <svg class="story-image__stretch" aria-hidden="true" width="700" height="100%" viewBox="0 0 700 472"><rect width="700" height="472"></rect></svg>
+                    <div class="story-image__content image-lazy"><a href="https://cs15.pikabu.ru/post_img/big/2024/12/25/5/1735113128113324848.png" target="_blank" class="image-link"><img data-src="https://cs15.pikabu.ru/post_img/2024/12/25/5/1735113128113324848.jpg" src="" data-large-image="https://cs15.pikabu.ru/post_img/big/2024/12/25/5/1735113128113324848.png" class="story-image__image" data-viewable="true" alt="Как создать свой личный VPN сервер VLESS+Reality Инструкция, Настройка, Гайд, VPN, Реальность, Сервер, Ubuntu, Длиннопост"></a></div>
+
+                </figure>
+
+            </div>
+
+            <div class="story-block story-block_type_text">
+                <div class="pkb-highlight-block"><p>Глава 4 - Приложение для ПК</p></div>
+            </div>
+
+            <div class="story-block story-block_type_text">
+                <p>Клиентов для ПК с возможностью создать подключение к серверу с протоколом VLESS много, это и Qv2ray, и Xray, и упомянутые выше клиенты для Mac V2RayU с V2RayTune, я же использую <b>v2rayN</b>, ссылка на его github: <a href="https://pikabu.ru/story/kak_sozdat_svoy_lichnyiy_vpn_server_vlessreality_12180362?u=https%3A%2F%2Fgithub.com%2F2dust%2Fv2rayN&amp;t=https%3A%2F%2Fgithub.com%2F2dust%2Fv2rayN&amp;h=969ee48cd7b78d211f6e2481b663cef1259300c3" target="_blank" rel="nofollow noopener">https://github.com/2dust/v2rayN</a></p>
+            </div>
+
+            <div class="story-block story-block_type_text">
+                <p>Качаем свежий релиз, разархивируем, запускаем</p>
+            </div>
+
+            <div class="story-block story-block_type_text">
+                <p>Копируем URL вашего пользователя (из того окна, которое открывается по кнопке Информация) с веб-страницы панели управления и нажимаем <b>Servers - Import Share Links from clipboard</b></p>
+            </div>
+
+            <div class="story-block story-block_type_image">
+                <figure class="story-image image-lazy">
+
+                    <svg class="story-image__stretch" aria-hidden="true" width="700" height="100%" viewBox="0 0 700 147"><rect width="700" height="147"></rect></svg>
+                    <div class="story-image__content image-lazy"><a href="https://cs15.pikabu.ru/post_img/big/2024/12/25/6/1735117748199931767.png" target="_blank" class="image-link"><img data-src="https://cs15.pikabu.ru/post_img/2024/12/25/6/1735117748199931767.jpg" src="" data-large-image="https://cs15.pikabu.ru/post_img/big/2024/12/25/6/1735117748199931767.png" class="story-image__image" data-viewable="true" alt="Как создать свой личный VPN сервер VLESS+Reality Инструкция, Настройка, Гайд, VPN, Реальность, Сервер, Ubuntu, Длиннопост"></a></div>
+
+                </figure>
+
+            </div>
+
+            <div class="story-block story-block_type_text">
+                <p>Сервер автоматически забирает нужные настройки и добавляется в список</p>
+            </div>
+
+            <div class="story-block story-block_type_image">
+                <figure class="story-image image-lazy">
+
+                    <svg class="story-image__stretch" aria-hidden="true" width="700" height="100%" viewBox="0 0 700 498"><rect width="700" height="498"></rect></svg>
+                    <div class="story-image__content image-lazy"><a href="https://cs15.pikabu.ru/post_img/big/2024/12/25/6/173511780215488894.png" target="_blank" class="image-link"><img data-src="https://cs15.pikabu.ru/post_img/2024/12/25/6/173511780215488894.jpg" src="" data-large-image="https://cs15.pikabu.ru/post_img/big/2024/12/25/6/173511780215488894.png" class="story-image__image" data-viewable="true" alt="Как создать свой личный VPN сервер VLESS+Reality Инструкция, Настройка, Гайд, VPN, Реальность, Сервер, Ubuntu, Длиннопост"></a></div>
+
+                </figure>
+
+            </div>
+
+            <div class="story-block story-block_type_text">
+                <p>Дёргаем внизу тумблер <b>Enable Tun</b> и готово, VPN работает</p>
+            </div>
+
+            <div class="story-block story-block_type_image">
+                <figure class="story-image image-lazy">
+
+                    <svg class="story-image__stretch" aria-hidden="true" width="700" height="100%" viewBox="0 0 700 213"><rect width="700" height="213"></rect></svg>
+                    <div class="story-image__content image-lazy"><a href="https://cs15.pikabu.ru/post_img/big/2024/12/25/6/1735118001133588079.png" target="_blank" class="image-link"><img data-src="https://cs15.pikabu.ru/post_img/2024/12/25/6/1735118001133588079.jpg" src="" data-large-image="https://cs15.pikabu.ru/post_img/big/2024/12/25/6/1735118001133588079.png" class="story-image__image" data-viewable="true" alt="Как создать свой личный VPN сервер VLESS+Reality Инструкция, Настройка, Гайд, VPN, Реальность, Сервер, Ubuntu, Длиннопост"></a></div>
+
+                </figure>
+                <p class="story-block__title">Иногда бывает, что VPN не срабатывает, тогда просто передёрните разок... тумблер.</p>
+            </div>
+
+            <div class="story-block story-block_type_text">
+                <p>При желании, можете переключить интерфейс на родной скрепный язык или включить афроамериканскую тему.</p>
+            </div>
+
+            <div class="story-block story-block_type_image story-block_padding_left">
+                <figure class="story-image image-lazy">
+
+                    <svg class="story-image__stretch" aria-hidden="true" width="439" height="100%" viewBox="0 0 439 455"><rect width="439" height="455"></rect></svg>
+                    <div class="story-image__content image-lazy"><a href="https://cs15.pikabu.ru/post_img/2024/12/26/4/1735191180165027052.jpg" target="_blank" class="image-link"><img data-src="https://cs15.pikabu.ru/post_img/2024/12/26/4/1735191180165027052.jpg" src="" data-large-image="https://cs15.pikabu.ru/post_img/2024/12/26/4/1735191180165027052.jpg" class="story-image__image" data-viewable="true" alt="Как создать свой личный VPN сервер VLESS+Reality Инструкция, Настройка, Гайд, VPN, Реальность, Сервер, Ubuntu, Длиннопост"></a></div>
+
+                </figure>
+
+            </div>
+
+            <div class="story-block story-block_type_text">
+                <p>На этом всё. Вопросы принимаю, смогу помочь и ответить на абсолютно все, до тех пор, пока в очередной раз не улечу в бан на несколько месяцев в политических постах.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="story__tags tags story__tags_collapsed story__tags_skeleton">
+        <div class="story__collapsed-tags-container"><a href="/original-stories" target="_blank" rel="noopener" class="tags__tag tags__tag_highlight" data-tag="Моё" data-tag-menu="true" data-subscribed="1" data-analytics-type="post_popup">[моё]</a> <a href="/tag/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%86%D0%B8%D1%8F/hot" target="_blank" rel="noopener" class="tags__tag" data-tag-menu="true" data-tag="Инструкция" data-analytics-type="post_popup">Инструкция</a> <a href="/tag/%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0/hot" target="_blank" rel="noopener" class="tags__tag" data-tag-menu="true" data-tag="Настройка" data-analytics-type="post_popup">Настройка</a> <a href="/tag/%D0%93%D0%B0%D0%B9%D0%B4/hot" target="_blank" rel="noopener" class="tags__tag" data-tag-menu="true" data-tag="Гайд" data-analytics-type="post_popup">Гайд</a> <a href="/tag/VPN/hot" target="_blank" rel="noopener" class="tags__tag" data-tag-menu="true" data-tag="VPN" data-analytics-type="post_popup">VPN</a> <a href="/tag/%D0%A0%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D1%8C/hot" target="_blank" rel="noopener" class="tags__tag" data-tag-menu="true" data-tag="Реальность" data-analytics-type="post_popup">Реальность</a> <a href="/tag/%D0%A1%D0%B5%D1%80%D0%B2%D0%B5%D1%80/hot" target="_blank" rel="noopener" class="tags__tag" data-tag-menu="true" data-tag="Сервер" data-analytics-type="post_popup">Сервер</a> <a href="/tag/Ubuntu/hot" target="_blank" rel="noopener" class="tags__tag" data-tag-menu="true" data-tag="Ubuntu" data-analytics-type="post_popup">Ubuntu</a> <a href="/tag/%D0%94%D0%BB%D0%B8%D0%BD%D0%BD%D0%BE%D0%BF%D0%BE%D1%81%D1%82/hot" target="_blank" rel="noopener" class="tags__tag" data-tag-menu="true" data-tag="Длиннопост" data-analytics-type="post_popup">Длиннопост</a> </div>
+    </div>
+
+
+</div>
+</div>
+</body>
+</html>
