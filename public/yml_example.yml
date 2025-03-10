@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<yml_catalog date="2025-01-01 17:00">
+    <shop>
+        <name>Магазин</name>
+        <outlets>
+            <outlet 
+                id="1" 
+                type="store"
+                name="Магазин на Ленина"
+                city="Ялта"
+                address="ул. Ленина, 10"
+                phone="+7 999 123-45-67"
+                schedule="09:00-21:00"
+                coordinate_lat="55.755819"
+                coordinate_lon="37.617644"
+                email="store1@example.com"
+                comment="комментарий"
+            />
+            <outlet 
+                id="2" 
+                type="warehouse"
+                name="Склад Южный"
+                city="Челябинск"
+            />
+        </outlets>
+    
+        <categories>
+            <category id="1">Бытовая техника</category>
+            <category id="101" parentId="1">Стиральные машины</category>
+            <category id="102" parentId="1">Холодильники</category>
+            <category id="103" parentId="1">Микроволновые печи</category>
+        </categories>
+
+        <offers>
+            <!-- Стиральные машины -->
+            <offer id="12345" group_id="washer_lg" available="true">
+                <name>Стиральная машина LG</name>
+                <price>18000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>101</categoryId>
+                <vendor>LG</vendor>
+                <picture>https://store.korting.ru/upload/iblock/21f/m0gi5a6hl0733ud7ov2dsqq175l4c87h.jpg</picture>
+                <store>true</store>
+                <pickup>true</pickup>
+                <delivery>true</delivery>
+                <param name="Цвет" group="true">белый</param>
+                <param name="Высота">85 см</param>
+            </offer>
+            <offer id="12346" group_id="washer_lg" available="true">
+                <name>Стиральная машина LG</name>
+                <price>18500</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>101</categoryId>
+                <vendor>LG</vendor>
+                <picture>https://img.mvideo.ru/Pdb/small_pic/480/20067848b.jpg</picture>
+                <store>true</store>
+                <pickup>true</pickup>
+                <delivery>true</delivery>
+                <param name="Цвет" group="true">черный</param>
+                <param name="Высота">85 см</param>
+            </offer>
+            <offer id="12347" group_id="washer_lg" available="true">
+                <name>Стиральная машина LG</name>
+                <price>19000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>101</categoryId>
+                <vendor>LG</vendor>
+                <picture>https://micro-line.ru/images/detailed/5641/7_8pfw-1z.webp</picture>
+                <store>true</store>
+                <pickup>true</pickup>
+                <delivery>true</delivery>
+                <param name="Цвет" group="true">синий</param>
+                <param name="Высота">85 см</param>
+            </offer>
+
+            <!-- Холодильники -->
+            <offer id="22345" group_id="fridge_samsung" available="true">
+                <name>Холодильник Samsung</name>
+                <price>40000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>102</categoryId>
+                <vendor>Samsung</vendor>
+                <picture>https://midearussia.ru/upload/iblock/6c6/tzdyyyw2vyyjgke4xeviyykj0vavm4rz.jpg</picture>
+                <store>true</store>
+                <pickup>true</pickup>
+                <delivery>true</delivery>
+                <param name="Цвет" group="true">белый</param>
+                <param name="Объем">300 л</param>
+            </offer>
+            <offer id="22346" group_id="fridge_samsung" available="true">
+                <name>Холодильник Samsung</name>
+                <price>42000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>102</categoryId>
+                <vendor>Samsung</vendor>
+                <picture>https://main-cdn.sbermegamarket.ru/big1/hlr-system/1509934/100000012511b0.jpg</picture>
+                <store>true</store>
+                <pickup>true</pickup>
+                <delivery>true</delivery>
+                <param name="Цвет" group="true">черный</param>
+                <param name="Объем">300 л</param>
+            </offer>
+
+            <!-- Микроволновые печи -->
+            <offer id="32345" group_id="microwave_bosch" available="true">
+                <name>Микроволновая печь Bosch</name>
+                <price>10000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>103</categoryId>
+                <vendor>Bosch</vendor>
+                <picture>https://moyki1.ru/sites/default/files/products/2/mikrovolnovka-teka-mwe-207-fi.jpg</picture>
+                <store>true</store>
+                <pickup>true</pickup>
+                <delivery>true</delivery>
+                <param name="Цвет" group="true">серебристый</param>
+                <param name="Мощность">1000 Вт</param>
+            </offer>
+            <offer id="32346" group_id="microwave_bosch" available="true">
+                <name>Микроволновая печь Bosch</name>
+                <price>10500</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>103</categoryId>
+                <vendor>Bosch</vendor>
+                <picture>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7Xozmyh_MBN_G-3OOcp29T5RVgSxdOzJzmQ&s</picture>
+                <store>true</store>
+                <pickup>true</pickup>
+                <delivery>true</delivery>
+                <param name="Цвет" group="true">черный</param>
+                <param name="Мощность">1000 Вт</param>
+            </offer>
+        </offers>
+    </shop>
+</yml_catalog>
