@@ -128,6 +128,61 @@
                 <param name="Цвет" group="true">черный</param>
                 <param name="Мощность">1000 Вт</param>
             </offer>
+            <offer>
+                <url type="category">189037</url>
+                <position>400</position>
+                <picture>https://luding.ru/upload/iblock/55e/mtomkcgek92u4jxi2qsv2br61fljmnr9.png</picture>
+            </offer>
+            <offer>
+                <url type="category">419450</url>
+                <position>500</position>
+                <picture>https://luding.ru/upload/iblock/eb2/wb8e3bxx7oxkjucmpqyb2i53es1aacyg.png</picture>
+            </offer>
+            <offer>
+                <url type="category">541634</url>
+                <position>1</position>
+                <picture>https://luding.ru/upload/iblock/582/aogcq9sp9evvg0l20g3gpavuu0wpbajk.png</picture>
+            </offer>
+            <offer>
+                <url type="category">550587</url>
+                <position>42</position>
+                <picture>https://luding.ru/upload/iblock/65d/bj3kp0qfdkjikq0at3pfk8n32vd6fz0u.png</picture>
+            </offer>
+            <offer>
+                <url type="category">551265</url>
+                <position>390</position>
+                <picture>https://luding.ru/upload/iblock/a94/vjtajwn5d6osv84udjm0hdt1wyt03npi.png</picture>
+            </offer>
+            <offer>
+                <url type="category">552161</url>
+                <position>10</position>
+                <picture>https://luding.ru/upload/iblock/31b/i1zjb71stk3vv2pxavvzubdocg56aql7.png</picture>
+            </offer>
+            <offer>
+                <url type="category">554656</url>
+                <position>40</position>
+                <picture>https://luding.ru/upload/iblock/7ae/t264k5u288euvztzieq2e1x1i01mbq52.png</picture>
+            </offer>
+            <offer>
+                <url type="category">554657</url>
+                <position>30</position>
+                <picture>https://luding.ru/upload/iblock/6af/dueexvjr1sjc1rt361trxrr4dn73l06o.png</picture>
+            </offer>
+            <offer>
+                <url type="category">554659</url>
+                <position>41</position>
+                <picture>https://luding.ru/upload/iblock/de9/a62bq2b2m7v6o4zbowm6duv7xxv32w1n.png</picture>
+            </offer>
+            <offer>
+                <url type="category">554661</url>
+                <position>20</position>
+                <picture>https://luding.ru/upload/iblock/67d/peufxmm7aywu6u9pz6ccyninq0lyqiz4.png</picture>
+            </offer>
+            <offer>
+                <url type="category">555886</url>
+                <position>11</position>
+                <picture>https://luding.ru/upload/iblock/9bf/1jizsh5q3a6imzc6wzbe9n82nk532w7h.png</picture>
+            </offer>
         </offers>
     </shop>
 </yml_catalog>
